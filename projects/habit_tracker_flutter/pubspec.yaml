@@ -25,6 +25,11 @@ dependencies:
     sdk: flutter
   cupertino_icons: 1.0.2
   flutter_launcher_icons: 0.9.0
+  flutter_riverpod:
+    git:
+      url: https://github.com/rrousselGit/river_pod
+      path: packages/flutter_riverpod
+      ref: bd57eff3745dabeb1985f84f27e291bdfef3b7a4
   flutter_svg: 0.22.0
   hive: 2.0.4
   hive_flutter: 1.0.0
@@ -33,8 +38,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  hive_generator: 1.1.0
   build_runner: 2.0.1
+  hive_generator: 1.1.0
+
+dependency_overrides:
+  riverpod:
+    git:
+      url: https://github.com/rrousselGit/river_pod
+      path: packages/riverpod
+      ref: bd57eff3745dabeb1985f84f27e291bdfef3b7a4
 
 flutter_icons:
   ios: true
